@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"  src="validate.js" defer></script>
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img class='logo' src="./images/logo_cam.png"/>
+                <h1 class="page-title">Through The Lens Photography</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="intro">
+                <p><strong>Welcome to <span class="title">Through The Lens Photography</span></strong> </p>
+                <br>
+                <p> This is where you can download from our collection of wildlife images in close-up (macro) for FREE! All you need to do is register to be able to access our gallery. </p>
+                <br>
+                <p><em>Sign-up now!</em></p>
+            </div>
+            <div class="form-container">
+                <h2 class="sign-up title">Registration Form</h2>
+                <form id="registration" action="POST">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" id="firstname" name="firstname" required>
+                                </td>
+                                <td>
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" id="lastname" name="lastname" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">E-Mail</label>
+                                    <input type="email" id="email" name="email" size="30" required>
+                                </td>
+                                <td>
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="error">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" minlength="8" name="password" required>
+                                </td>
+                                <td>
+                                    <label for="password2">Confirm Password</label>
+                                    <input type="password" id="password2" name="password2" required>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="account-actions">
+                <button form="registration" type="submit" id="submit-btn">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
